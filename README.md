@@ -75,3 +75,7 @@ Tell to Bot what transform you want to use. In order: werewolf, bear, astaroth, 
 - You can't active physical attack and magical at same time.
 - Group Macro Mob show current attacked mob.
 - EXP checkbox show current earned experience.
+
+## Important thing to do
+You need to update with hash system used on 756 version or above to encrypt packet correctly.
+This system needs to be on `cServer::AddMessage(char *pMsg, int Size)`. 
