@@ -38,11 +38,8 @@ BOOL Server::Connect()
 	ZeroMemory(service, sizeof SOCKADDR_IN);
 
 	service->sin_family		= AF_INET;
-	//service->sin_addr.s_addr = inet_addr("158.69.235.146");
-	service->sin_addr.s_addr = inet_addr("164.132.207.123");
-	//service->sin_addr.s_addr = inet_addr("127.0.0.1");
-    service->sin_port		= htons(8174);
-//	service->sin_port		= htons(7178);
+	service->sin_addr.s_addr 	= inet_addr(9999);
+	service->sin_port		= htons(999);
 
 	WSADATA *wsa = GetwSaData();
 	if(WSAStartup(MAKEWORD(1, 1), wsa) != NO_ERROR)
@@ -109,7 +106,7 @@ BOOL Server::AddMessage(char *pMsg, int Size)
 		INT32 hashIncrement = GetHashIncrement();
 		if(hashIncrement > 15)
 		{ 
-			// checagem desnecess·ria 
+			// checagem desnecess√°ria 
 			// 0042524C
 			
 		}
