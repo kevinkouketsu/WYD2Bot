@@ -9,14 +9,14 @@ void SendRequestLogin(char *login, char *password)
 	p20D packet;
 	memset(&packet, 0, sizeof packet);
 
-	packet.Header.PacketId = 0x784;
+	packet.Header.PacketId = 0x20D;
 	packet.Header.Size     = sizeof packet;
 	packet.Header.ClientId = 0;
 
 	strncpy(packet.Username, login, 12);
 	strncpy(packet.Password, password, 12);
 
-	packet.CliVer = 8162;//7000;//8146;
+	packet.CliVer = 9999;//7000;//8146;
 	EncryptVersion(&packet.CliVer);
 	
 	UUID uuid;
