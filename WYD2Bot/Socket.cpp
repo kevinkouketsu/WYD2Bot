@@ -125,18 +125,6 @@ BOOL Server::AddMessage(char *pMsg, int Size)
 
 	TimePacket = GetCurrentTime();
 
-	if(pSMsg->PacketId == 0xFDE)
-	{
-		pFDE *packet = (pFDE*)(pSMsg);
-		for(INT32 i = 0; i < 6;i++)
-		{
-			char val = (char)(packet->num[i]);
-			if(!val)
-				break;
-				
-			packet->num[i] ^= packet->Header.Key;
-		}
-	}
 	unsigned char Sum1 = 0;
 	unsigned char Sum2 = 0;
  	int			  pos  = KeyWord;
