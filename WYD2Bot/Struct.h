@@ -181,7 +181,7 @@ typedef struct
 	st_Item Inventory[64]; // 268 - 779
 
 	DWORD Learn; // 780 - 783
-	DWORD SecLearn; // 774 - 787
+	DWORD Mimimimimimi; // 774 - 787
 	WORD StatusPoint; // 788 - 789
 	WORD MasterPoint; // 790 - 791
 	WORD SkillPoint; //792 - 793
@@ -330,8 +330,7 @@ typedef struct
 	st_Affect Affect[32];
 	int ClassMaster;
 
-	stQuestInfo Info;
-
+	INT64 Unknow22;
 	INT8 Unknoww[22];
 	char SkillBar[2][10];
 
