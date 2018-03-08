@@ -59,73 +59,6 @@ struct sItemData
     short Grade;
 };
 
-union stQuestInfo
-{
-	struct
-	{
-		// Level feito o celestial
-		INT64 Level355 : 1;
-		INT64 Level370 : 1;
-		INT64 Level380 : 1;
-		INT64 Level398 : 1;
-		INT64 Level399 : 1;
-
-
-		// Cristais Arch
-		INT64 Elime : 1;
-		INT64 Sylphed : 1;
-		INT64 Thelion : 1;
-		INT64 Noas : 1;
-
-		// Arcana
-		INT64 Arcana : 1;
-
-		// Adicionais SubCele
-		INT64 Add120 : 1;
-		INT64 Add151 : 1;
-		INT64 Add180 : 1;
-		INT64 Add199 : 1;
-
-		// Resets Subcelestial
-		INT64 Reset_1 : 1;
-		INT64 Reset_2 : 1;
-		INT64 Reset_3 : 1;
-		INT64 Reset_4 : 1;
-
-		// Treinadores
-		INT64 Treinador_1 : 1;
-		INT64 Treinador_2 : 1;
-		INT64 Treinador_3 : 1;
-
-		INT64 Unicornio : 1;
-		INT64 MolarGargula : 1;
-
-		INT64 Reset_50 : 1;
-		INT64 Pilula : 1;
-
-		INT64 Conj_Iniciante : 1;
-
-		INT64 BemVindo : 1;
-		INT64 Quest_1_de_5 : 1;
-		INT64 Quest_2_de_5 : 1;
-		INT64 Quest_3_de_5 : 1;
-		INT64 Quest_4_de_5 : 1;
-		INT64 Quest_5_de_5 : 1;
-
-		INT64 LvBlocked : 1;
-		INT64 BalanceQuest : 1;
-		INT64 GodBless : 1;
-
-		INT64 Unlock354 : 1;
-		INT64 Unlock369 : 1;
-		INT64 Unlock39  : 1;
-		INT64 Unlock89  : 1;
-
-		INT64 Unknow : 25;
-	};
-	INT64 Value;
-};
-
 typedef struct
 {
     int Points;
@@ -399,14 +332,7 @@ typedef struct
 
 	stQuestInfo Info;
 
-	UINT32 HallEnter; // Entradas para Kefra
-	UINT32 Fame; // Fama do personagem
-
-	UINT8 Citizen; // Cidadania
-	UINT8 Soul; // Configuração da Soul
-
-	UINT32 MortalSlot;
-	UINT64 Hold;
+	INT8 Unknoww[22];
 	char SkillBar[2][10];
 
 	BYTE Unknow[286];
