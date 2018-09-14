@@ -29,7 +29,7 @@ The files are found on any release of WYD (see http://www.webcheats.com.br/).
 To compile, you will need Visual Studio 2017 or greater.
 
 ## Before compile
-1. Set in `Server.cpp` function `Server::Connect` IP and PORT you want to connect.
+1. Set in `Socket.cpp` function `Server::Connect` IP and PORT you want to connect.
 2. Set in `SendFunc.cpp` function `SendRequestLogin` the client version.
 
 ## Use it
